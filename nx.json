@@ -7,5 +7,12 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "react-store-front": {
+      "tags": []
+    },
+    "react-store-front-e2e": {
+      "tags": []
+    }
+  }
 }
