@@ -1,0 +1,17 @@
+.category-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
+}
+
+
+.header-title {
+  color: #1d1d1d;
+}
+
+.category-list {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}

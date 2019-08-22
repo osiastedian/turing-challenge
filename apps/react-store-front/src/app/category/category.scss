@@ -1,0 +1,7 @@
+.category-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px repeat(auto-fill, 300px);;
+  grid-gap: 10px;
+  grid-template-areas: 'filter' 'filter';
+}

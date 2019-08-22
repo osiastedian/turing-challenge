@@ -1,0 +1,33 @@
+@tailwind base;
+
+.filter {
+  grid-area: filter;
+  background-color: #fafafa;
+}
+
+.bg-primary {
+  background-color: #f62f5e;
+}
+
+.primary {
+  color: #f62f5e;
+}
+
+.bg-label {
+  color: #b4b4b4;
+}
+
+.size-button-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0.5em;
+}
+
+.size-button {
+  background-color: #efefef;
+
+  &.selected {
+    @extend .bg-primary;
+    color: white;
+  }
+}
