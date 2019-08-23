@@ -9,12 +9,15 @@ import CategoryItem from './category-item/category-item';
 export interface CategoryProps {}
 
 export const Category = (props: CategoryProps) => {
+  const items = Array(11).fill(1);
   return (
     <div className="container mx-auto p-2">
       <CategoryHeader></CategoryHeader>
       <div className="category-items">
         <CategoryFilter></CategoryFilter>
-        <CategoryItem></CategoryItem>
+        {
+          items.map((item, index) => <CategoryItem key={index} showQuickView={false}></CategoryItem>)
+        }
       </div>
     </div>
   );

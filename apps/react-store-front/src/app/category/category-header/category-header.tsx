@@ -16,7 +16,7 @@ export const CategoryHeader = (props: CategoryHeaderProps) => {
       <div className="m-auto w-5/6">
       <h1 className="font-bold font-serif text-6xl tracking-wide header-title" >Mens wear</h1>
       <ul className="font-bold text-white category-list">
-        {categories.map(cateogry => (<li>{cateogry}</li>) )}
+        {categories.map((cateogry, index) => (<li key={index}>{cateogry}</li>) )}
       </ul>
       </div>
     </div>

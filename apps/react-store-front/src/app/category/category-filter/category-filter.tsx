@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './category-filter.scss';
+import ColorPicker from '../../shared/color-picker/color-picker';
 
 /* eslint-disable-next-line */
 export interface CategoryFilterProps {}
@@ -33,17 +34,13 @@ export const CategoryFilter = (props: CategoryFilterProps) => {
           </li>
         </ul>
       </div>
-      <div className="bg-white flex-1" >
+      <div className="bg-white flex-1">
         <div className="flex flex-col p-4">
-          <span className="font-bold bg-label">
-            Color
-          </span>
-          <div className="flex"></div>
+          <span className="font-bold bg-label">Color</span>
+          <ColorPicker />
         </div>
         <div className="flex flex-col p-4">
-          <span className="font-bold bg-label">
-            Sizes
-          </span>
+          <span className="font-bold bg-label">Sizes</span>
           <div className="size-button-container">
             <button className="size-button rounded">XS</button>
             <button className="size-button rounded">S</button>
@@ -53,19 +50,22 @@ export const CategoryFilter = (props: CategoryFilterProps) => {
           </div>
         </div>
         <div className="flex flex-col p-4">
-          <span className="font-bold bg-label">
-            Price
-          </span>
-          <div className="size-button-container">
-
-          </div>
+          <span className="font-bold bg-label">Price</span>
+          <div className="size-button-container" />
         </div>
       </div>
       <div className="border flex justify-around p-4">
-        <button className="font-bold px-5 py-1 rounded-l-full rounded-r-full text-white bg-primary">Apply</button>
+        <button className="font-bold px-5 py-1 rounded-l-full rounded-r-full text-white bg-primary">
+          Apply
+        </button>
         <button className="flex primary">
-          <img className="my-auto" src="/assets/icon/icons-close-small-red.png" alt=""/>
-          Clear All</button>
+          <img
+            className="my-auto"
+            src="/assets/icon/icons-close-small-red.png"
+            alt=""
+          />
+          Clear All
+        </button>
       </div>
     </div>
   );

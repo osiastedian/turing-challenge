@@ -1,0 +1,34 @@
+.white-transparent {
+  background-color: #ffffffee;
+}
+
+.bg-primary {
+  background-color: #f62f5e;
+}
+
+.hover-bg-primary:hover {
+  background-color: #f62f5e;
+}
+
+.text-primary {
+  color: #f62f5e;
+}
+
+.hover-buy-now:hover {
+  &::before {
+    content: 'Buy now';
+    color: white;
+  }
+
+  .price {
+    display: none;
+  }
+}
+
+.text-black {
+  color: #2e2e2e;
+}
+
+[hidden] {
+  display: none;
+}
