@@ -53,6 +53,10 @@ export const CategoryFilter = (props: CategoryFilterProps) => {
           <span className="font-bold bg-label">Price</span>
           <div className="size-button-container" />
         </div>
+        <div className="flex flex-col p-4">
+          <span className="font-bold bg-label">Brand</span>
+          <div className="size-button-container" />
+        </div>
       </div>
       <div className="border flex justify-around p-4">
         <button className="font-bold px-5 py-1 rounded-l-full rounded-r-full text-white bg-primary">

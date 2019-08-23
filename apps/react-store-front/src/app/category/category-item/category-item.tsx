@@ -10,7 +10,7 @@ export interface CategoryItemProps {
 export class CategoryItem extends Component<CategoryItemProps> {
   constructor(props: CategoryItemProps) {
     super(props);
-    this.state = props;
+    this.state = {...props};
   }
 
   render() {
