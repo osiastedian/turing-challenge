@@ -16,7 +16,7 @@ export class CategoryItem extends Component<CategoryItemProps> {
   render() {
     const { showQuickView } = this.state as Readonly<CategoryItemProps>;
     return (
-      <div className="bg-white flex flex-col p-5 relative shadow">
+      <div className="bg-white flex flex-col p-5 relative shadow hover:shadow-2xl">
         <div className="flex-grow relative">
           <button
             className="h-full mx-auto block"
